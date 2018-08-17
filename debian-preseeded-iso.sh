@@ -52,7 +52,6 @@ echo 'making ISO...'
 
 echo 'making hybrid ISO...'
 
-
 xorriso -as mkisofs \
         -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin \
         -c isolinux/boot.cat -b isolinux/isolinux.bin -no-emul-boot \
@@ -60,5 +59,8 @@ xorriso -as mkisofs \
 	-o $ISOFILE_FINAL \
 	./$ISODIR_WRITE
 rm -rf debian-iso debian-iso-rw
+
 # and if that doesn't work:
 # http://askubuntu.com/questions/6684/preseeding-ubuntu-server
+## Create a preseeded (debian) hybrid ISO which can be burned to CD and dd'ed to a USB stick, 
+## Don't forget to apt-get install xorriso isolinux
