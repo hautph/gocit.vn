@@ -1,5 +1,3 @@
-## Create a preseeded (debian) hybrid ISO which can be burned to CD and dd'ed to a USB stick, 
-## Don't forget to apt-get install xorriso isolinux
 #!/bin/bash
 
 set -e
@@ -66,3 +64,5 @@ xorriso -as mkisofs \
 
 # and if that doesn't work:
 # http://askubuntu.com/questions/6684/preseeding-ubuntu-server
+## Create a preseeded (debian) hybrid ISO which can be burned to CD and dd'ed to a USB stick, 
+## Don't forget to apt-get install xorriso isolinux
