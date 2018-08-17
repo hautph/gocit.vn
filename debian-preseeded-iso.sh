@@ -10,15 +10,13 @@ set -u
 # xorriso
 # syslinux
 
-ISOFILE=debian-netinst.iso
-ISOFILE_FINAL=debian-netinst-mod.iso
+ISOFILE=debian-amd64-netinst-3cx.iso 
+ISOFILE_FINAL=debian-amd64-netinst-3cx-mod.iso 
 ISODIR=debian-iso
 ISODIR_WRITE=$ISODIR-rw
 
 # download ISO:
 wget -nc -O $ISOFILE https://downloads.3cx.com/downloads/debian9iso/debian-amd64-netinst-3cx.iso  || true
-
-mv debian-amd64-netinst-3cx.iso debian-netinst.iso
 
 echo 'mounting ISO9660 filesystem...'
 # source: http://wiki.debian.org/DebianInstaller/Preseed/EditIso
