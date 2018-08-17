@@ -43,13 +43,6 @@ pushd $ISODIR_WRITE
   md5sum $(find -type f) > md5sum.txt
 popd
 
-echo 'making ISO...'
-# genisoimage -o $ISOFILE_FINAL \
-#   -r -J -no-emul-boot -boot-load-size 4 \
-#   -boot-info-table \
-#   -b isolinux/isolinux.bin \
-#   -c isolinux/boot.cat ./$ISODIR_WRITE
-
 echo 'making hybrid ISO...'
 
 xorriso -as mkisofs \
