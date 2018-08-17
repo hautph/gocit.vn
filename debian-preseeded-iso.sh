@@ -1,4 +1,5 @@
-## Create a preseeded (debian) hybrid ISO which can be burned to CD and dd'ed to a USB stick, don't forget to apt-get install xorriso isolinux
+## Create a preseeded (debian) hybrid ISO which can be burned to CD and dd'ed to a USB stick, 
+## Don't forget to apt-get install xorriso isolinux
 #!/bin/bash
 
 set -e
