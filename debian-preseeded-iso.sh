@@ -54,7 +54,6 @@ echo 'making ISO...'
 
 echo 'making hybrid ISO...'
 xorriso -as mkisofs \
-  -r -J -V "luma-wheezy" \
   -b isolinux/isolinux.bin \
   -c isolinux/boot.cat \
   -no-emul-boot \
