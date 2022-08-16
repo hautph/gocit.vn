@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ############################################################
-# CephAdmin Install Script for Debian 10 (Bullseye)
+# CephAdmin Install Script for Debian 10, 11 (Bullseye)
 # 
 # run as sudo 
 ############################################################
